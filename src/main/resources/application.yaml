@@ -12,13 +12,13 @@ apihub:
   baseUrl: "${API_HUB_BASE_URL:http://localhost:9099}"
   client:
     auth:
-      clientName: "${kyano.keycloak.resource:myapp}"
-      clientSecret: "${kyano.keycloak.secret:wQ16Tnjj1eGiRljkn5X8j6MGDAvqIuFL}"
+      clientName: "${kyano.keycloak.resource:*****}"
+      clientSecret: "${kyano.keycloak.secret:*************************}"
       accessTokenUrlRL: "${kyano.keycloak.auth-server-url:http://localhost:9180/auth/realms/kyano/protocol/openid-connect/token}"
 
 springdoc:
   swagger-ui:
     oauth:
-      client-id: "myapp"
-      client-secret: "wQ16Tnjj1eGiRljkn5X8j6MGDAvqIuFL"
+      client-id: "******************"
+      client-secret: "***************************"
       app-name: "Tc-Mp-Aadapter"
