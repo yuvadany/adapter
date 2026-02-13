@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Tc-Mp-Aadapter
+server:
+  port : 8089
+
+addressservice:
+    base:
+      url: http://localhost:9099/marketplace/rest/internal/api/contract
+
+apihub:
+  baseUrl: "${API_HUB_BASE_URL:http://localhost:9099}"
+  client:
+    auth:
+      clientName: "${kyano.keycloak.resource:myapp}"
+      clientSecret: "${kyano.keycloak.secret:wQ16Tnjj1eGiRljkn5X8j6MGDAvqIuFL}"
+      accessTokenUrlRL: "${kyano.keycloak.auth-server-url:http://localhost:9180/auth/realms/kyano/protocol/openid-connect/token}"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: "myapp"
+      client-secret: "wQ16Tnjj1eGiRljkn5X8j6MGDAvqIuFL"
+      app-name: "Tc-Mp-Aadapter"
